@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="skinmake.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>hearty heart</title>
+</head>
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary m-3 shadow-sm sticky-top ">
+        <div class="container-fluid d-flex justify-content-md">
+          <a class="navbar-brand mr-auto p-2" href="#"><h1 class="fs-2" >Hearty<span class="warning">Heart</span></h1></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blogs.html">Tutorials</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sales 
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="makeup.html">Make up</a></li>
+                  <li><a class="dropdown-item" href="skincare.html">Skincare</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="index.html">all</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Makeup
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="makeup.html">Makeup Essential</a></li>
+                  <li><a class="dropdown-item" href="makeup.html">Discounted Items</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="makeup.html">All</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="skincare.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Skincare
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="skincare.html">Basic Skin Care Steps</a></li>
+                  <li><a class="dropdown-item" href="skincare.html">Face Essential</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="skincare.html">All</a></li>
+                </ul>
+             
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-warning" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+<!-- nav end -->
+
+
+      <!-- brands -->
+      <div class="brands">
+        <div class="pink"><img src="logo/81475707-0c94-41ca-a358-036584c29c23.jpg" alt=""></div>
+        <div class="blue"><img src="logo/Free Lancôme Paris Vector Logo - TitanUI.jpg" alt=""></div>
+        <div class="yellow"><img src="logo/innisfree Logo PNG Vector (AI) Free Download.png" alt=""></div>
+        <div class="orange"><img src="logo/L’Oreal Logo and symbol, meaning, history, PNG, brand.jpg" alt=""></div>
+        <div class="purple"><img src="logo/maybelline Vector logo - Free vector for free….jpg" alt=""></div>
+        <div class="aqua"><img src="logo/Thương Hiệu TONYMOLY - Mptd.jpg" alt=""></div>
+      </div>
+      <!-- brands end -->
+
+      <div id="buttons" class="container text-center">
+        <button class="btn btn-warning" onclick="filterObjects('all')">All</button>
+        <button class="btn btn-warning" onclick="filterObjects('lipstick')" >Lipstick</button>
+        <button class="btn btn-warning" onclick="filterObjects('foundation')">Foundation</button>
+
+      </div>
+      
+
+      <!-- make up -->
+    <div class="row row-cols-1 row-cols-md-4 g-4 m-5">
+        <div class="col lipstick">
+          <div class="card border-0">
+            <img src="comsmetic/These 11 Red Lipsticks Work on Every Skin Tone.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mac Lipstick</h5>
+              <p class="card-text">The lipstic is long lasting
+                 dolor, sit amet consectetur adipisicing elit. Soluta necessitatibus fuga quis doloremque voluptatum dolorum incidunt qui venia
+                 m dignissimos neque!
+              </p>
+                 <!-- see the products details -->
+                 <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">See The Product Details</button>
+
+                 <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                   <div class="offcanvas-header">
+                     <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Review by Customers </h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                   </div>
+                   <div class="offcanvas-body">
+                     <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                       <div class="carousel-inner">
+                         <div class="carousel-item active">
+                           <img style="width:30% ;" src="lip/10 Things Your Dermatologist Can Do to Make You Look Younger, Faster.jpg" class="d-block w-100" alt="...">
+                         </div>
+                       
+                         <div class="carousel-item">
+                           <img style="width:30%" src="lip/_NAMING_ Dewy Glow Lip Tint (Choose 1)_.jpg" class="d-block w-100" alt="...">
+                         </div>
+                       </div>
+                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                         <span class="visually-hidden">Previous</span>
+                       </button>
+                       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                         <span class="visually-hidden">Next</span>
+                       </button>
+                     </div>
+                     <p>Soothing serum, redness vanished. Prepares
+                        skin beautifully for next steps..</p>
+                       <!-- Button trigger modal -->
+   
+   
+                
+            </div>
+                 </div>
+               <!-- end of products details -->
+            </div>
+          </div>
+        </div>
+        <div class="col lipstick">
+          <div class="card border-0">
+            <img src="comsmetic/The 7 best red lipsticks of all time.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Chanel</h5>
+              <p class="card-text">This so long lasting</p>
+                  <!-- see the products details -->
+                  <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">See The Product Details</button>
+
+                  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Review by Customers </h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img style="width:30% ;" src="skin/Rejuvenating care for all skin types_ hyaluron serum.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img style="width: 30%;" src="skin/ACTIVE COCOONING SERUM.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img style="width:30%" src="skin/How to Get Your Oily Skin Under Control in the Summer.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      <p>Soothing serum, redness vanished. Prepares
+                         skin beautifully for next steps..</p>
+                        <!-- Button trigger modal -->
+    
+    
+                 
+             </div>
+                  </div>
+                <!-- end of products details -->
+            </div>
+          </div>
+        </div>
+        <div class="col lipstick">
+          <div class="card border-0">
+            <img src="comsmetic/Zoe Kravitz Talks Stress-Relief, Past Beauty Mistakes, and Her New YSL Lipstick Collection _ Vogue.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">YSL</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                  <!-- see the products details -->
+                  <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">See The Product Details</button>
+
+                  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Review by Customers </h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img style="width:30% ;" src="lip/Hot Cocoa —   Lip Gloss.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img style="width: 30%;" src="lip/Velvet Lips Vixen Rouge.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img style="width:30%" src="lip/KITTEN.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      <p>Soothing serum, redness vanished. Prepares
+                         skin beautifully for next steps..</p>
+                        <!-- Button trigger modal -->
+    
+    
+                 
+             </div>
+                  </div>
+                <!-- end of products details -->
+            </div>
+          </div>
+        </div>
+        <div class="col foundation">
+          <div class="card border-0">
+            <img src="comsmetic/Cream oil texture composition Cosmetic product swatch _ Magnus Cramer - Cosmetics and Texture  Photographer.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Laura mercier</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <!-- see the products details -->
+                  <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">See The Product Details</button>
+
+                  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Review by Customers </h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img style="width:30% ;" src="skin/Rejuvenating care for all skin types_ hyaluron serum.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img style="width: 30%;" src="skin/ACTIVE COCOONING SERUM.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img style="width:30%" src="skin/How to Get Your Oily Skin Under Control in the Summer.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      <p>Soothing serum, redness vanished. Prepares
+                         skin beautifully for next steps..</p>
+                        <!-- Button trigger modal -->
+    
+    
+                 
+             </div>
+                  </div>
+                <!-- end of products details -->
+            </div>
+          </div>
+        </div>
+        <div class="col foundation">
+            <div class="card border-0">
+              <img src="comsmetic/The Best Non-Sticky Foundations for Summer.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dior</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <!-- see the products details -->
+                    <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">See The Product Details</button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Review by Customers </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img style="width:30% ;" src="skin/Rejuvenating care for all skin types_ hyaluron serum.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img style="width: 30%;" src="skin/ACTIVE COCOONING SERUM.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img style="width:30%" src="skin/How to Get Your Oily Skin Under Control in the Summer.jpg" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                        <p>Soothing serum, redness vanished. Prepares
+                           skin beautifully for next steps..</p>
+                          <!-- Button trigger modal -->
+      
+      
+                   
+               </div>
+                    </div>
+                  <!-- end of products details -->
+            </div>
+            </div>
+          </div>
+          <div class="col foundation">
+            <div class="card border-0">
+              <img src="comsmetic/foundation.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">NARS</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>    <!-- see the products details -->
+                <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">See The Product Details</button>
+
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Review by Customers </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img style="width:30% ;" src="skin/Rejuvenating care for all skin types_ hyaluron serum.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img style="width: 30%;" src="skin/ACTIVE COCOONING SERUM.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img style="width:30%" src="skin/How to Get Your Oily Skin Under Control in the Summer.jpg" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    <p>Soothing serum, redness vanished. Prepares
+                       skin beautifully for next steps..</p>
+                      <!-- Button trigger modal -->
+  
+  
+               
+           </div>
+                </div>
+
+                
+            </div>
+            </div>
+          </div>
+          <div class="col foundation">
+            <div class="card border-0">
+              <img src="comsmetic/foundation1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bobbi Brown</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                  <!-- see the products details -->
+                  <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">See The Product Details</button>
+
+                  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Review by Customers </h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img style="width:30% ;" src="skin/Rejuvenating care for all skin types_ hyaluron serum.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img style="width: 30%;" src="skin/ACTIVE COCOONING SERUM.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img style="width:30%" src="skin/How to Get Your Oily Skin Under Control in the Summer.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      <p>Soothing serum, redness vanished. Prepares
+                         skin beautifully for next steps..</p>
+                        <!-- Button trigger modal -->
+    
+    
+                 
+             </div>
+                  </div>
+                <!-- end of products details -->
+            </div>
+            </div>
+          </div>
+          <div class="col foundation">
+            <div class="card border-0">
+              <img src="comsmetic/foundation2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">KLAVUU</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                    <!-- see the products details -->
+                    <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">See The Product Details</button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Review by Customers </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img style="width:30% ;" src="skin/Rejuvenating care for all skin types_ hyaluron serum.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img style="width: 30%;" src="skin/ACTIVE COCOONING SERUM.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img style="width:30%" src="skin/How to Get Your Oily Skin Under Control in the Summer.jpg" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                        <p>Soothing serum, redness vanished. Prepares
+                           skin beautifully for next steps..</p>
+                          <!-- Button trigger modal -->
+      
+      
+                   
+               </div>
+                    </div>
+                  <!-- end of products details -->
+            </div>
+            </div>
+          </div>
+          <div class="col foundation">
+            <div class="card border-0">
+              <img src="comsmetic/foundation3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">ELF</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                   <!-- see the products details -->
+                   <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">See The Product Details</button>
+
+                   <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                     <div class="offcanvas-header">
+                       <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Review by Customers </h5>
+                       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                     </div>
+                     <div class="offcanvas-body">
+                       <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                         <div class="carousel-inner">
+                           <div class="carousel-item active">
+                             <img style="width:30% ;" src="skin/Rejuvenating care for all skin types_ hyaluron serum.png" class="d-block w-100" alt="...">
+                           </div>
+                           <div class="carousel-item">
+                             <img style="width: 30%;" src="skin/ACTIVE COCOONING SERUM.png" class="d-block w-100" alt="...">
+                           </div>
+                           <div class="carousel-item">
+                             <img style="width:30%" src="skin/How to Get Your Oily Skin Under Control in the Summer.jpg" class="d-block w-100" alt="...">
+                           </div>
+                         </div>
+                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                           <span class="visually-hidden">Previous</span>
+                         </button>
+                         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                           <span class="visually-hidden">Next</span>
+                         </button>
+                       </div>
+                       <p>Soothing serum, redness vanished. Prepares
+                          skin beautifully for next steps..</p>
+                         <!-- Button trigger modal -->
+     
+     
+                  
+              </div>
+                   </div>
+                 <!-- end of products details --> 
+            </div>
+            </div>
+          </div>
+          <div class="col foundation">
+            <div class="card border-0">
+              <img src="comsmetic/foundation4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bobbi Brown</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                    <!-- see the products details -->
+                    <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">See The Product Details</button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Review by Customers </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img style="width:30% ;" src="skin/Rejuvenating care for all skin types_ hyaluron serum.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img style="width: 30%;" src="skin/ACTIVE COCOONING SERUM.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img style="width:30%" src="skin/How to Get Your Oily Skin Under Control in the Summer.jpg" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                        <p>Soothing serum, redness vanished. Prepares
+                           skin beautifully for next steps..</p>
+                          <!-- Button trigger modal -->
+      
+      
+                   
+               </div>
+                    </div>
+                  <!-- end of products details -->
+            </div>
+            </div>
+          </div>
+          <div class="col lipstick">
+            <div class="card border-0">
+              <img src="comsmetic/lipstick1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Maybelline New York</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                   <!-- see the products details -->
+                   <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">See The Product Details</button>
+
+                   <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                     <div class="offcanvas-header">
+                       <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Review by Customers </h5>
+                       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                     </div>
+                     <div class="offcanvas-body">
+                       <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                         <div class="carousel-inner">
+                           <div class="carousel-item active">
+                             <img style="width:30% ;" src="skin/Rejuvenating care for all skin types_ hyaluron serum.png" class="d-block w-100" alt="...">
+                           </div>
+                           <div class="carousel-item">
+                             <img style="width: 30%;" src="skin/ACTIVE COCOONING SERUM.png" class="d-block w-100" alt="...">
+                           </div>
+                           <div class="carousel-item">
+                             <img style="width:30%" src="skin/How to Get Your Oily Skin Under Control in the Summer.jpg" class="d-block w-100" alt="...">
+                           </div>
+                         </div>
+                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                           <span class="visually-hidden">Previous</span>
+                         </button>
+                         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                           <span class="visually-hidden">Next</span>
+                         </button>
+                       </div>
+                       <p>Soothing serum, redness vanished. Prepares
+                          skin beautifully for next steps..</p>
+                         <!-- Button trigger modal -->
+     
+     
+                  
+              </div>
+                   </div>
+                 <!-- end of products details -->
+            </div>
+            </div>
+          </div>
+          <div class="col lipstick">
+            <div class="card border-0">
+              <img src="comsmetic/lipstick2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Rare Beauty</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                 <!-- see the products details -->
+                 <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">See The Product Details</button>
+
+                 <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                   <div class="offcanvas-header">
+                     <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Review by Customers </h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                   </div>
+                   <div class="offcanvas-body">
+                     <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                       <div class="carousel-inner">
+                         <div class="carousel-item active">
+                           <img style="width:30% ;" src="skin/Rejuvenating care for all skin types_ hyaluron serum.png" class="d-block w-100" alt="...">
+                         </div>
+                         <div class="carousel-item">
+                           <img style="width: 30%;" src="skin/ACTIVE COCOONING SERUM.png" class="d-block w-100" alt="...">
+                         </div>
+                         <div class="carousel-item">
+                           <img style="width:30%" src="skin/How to Get Your Oily Skin Under Control in the Summer.jpg" class="d-block w-100" alt="...">
+                         </div>
+                       </div>
+                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                         <span class="visually-hidden">Previous</span>
+                       </button>
+                       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                         <span class="visually-hidden">Next</span>
+                       </button>
+                     </div>
+                     <p>Soothing serum, redness vanished. Prepares
+                        skin beautifully for next steps..</p>
+                       <!-- Button trigger modal -->
+   
+   
+                
+            </div>
+                 </div>
+               <!-- end of products details -->
+            </div>
+            </div>
+          </div>
+      </div>
+      <!-- make up end -->
+
+    
+
+<!-- footer -->
+<footer class="m-auto">
+  <div id="#footer" class="bg-image"></div>
+   
+   <div class="row row-cols-1 row-cols-md-4 g-4 m-2 d-flex align-items-center m-3">
+   
+    <div class="col">
+      <h5 class="fw-bold">Customer Service</h5>
+      <ul>
+        <li>
+          <a class="link-dark" href="#">FAQs</a>
+        </li>
+        <li>
+         <a class="link-dark" href="#">Return Policy</a>
+        </li>
+        <li>
+          <a class="link-dark" href="#">Shopping Information</a>
+        </li>
+        <li><a href="#"><i class="fa-brands fa-facebook" style="color: #0d1e3b;"></i></a><a href="#"><i class="fa-brands fa-x-twitter"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-threads"></i></a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h5  class="fw-bold">
+        Welcome to Hearty Heart
+      </h5>
+
+      <ul>
+        <li><a class="link-dark" href="#">Recycle with us</a></li>
+        <li><a class="link-dark" href="#">Our Ingredient Standard</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h5 class="fw-bold"> Rewards </h5>
+       <ul>
+        <li><a class="link-dark" href="#">inni-Friend Rewards</a></li>
+        <li><a class="link-dark" href="#">Limited time</a></li>
+        <li><a class="link-dark" href="#">Sign Up for text & Get 10% OFF*</a></li>
+
+       </ul>    
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-header">
+          REGISTRATION FORM
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">SIGN UP</h5>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              By submitting this form, you consent to innisfree's 
+              Privacy Policy and Terms of Use. For further information about
+
+               
+            </label>
+          </div>
+          <a href="#" class="btn btn-primary">Sign Up</a>
+        </div>
+      </div>
+    </div>
+   </div>
+ </footer>
+<!-- footer end -->
+
+      <script src="script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

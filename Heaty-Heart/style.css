@@ -1,0 +1,90 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;1,300;1,400&family=Pacifico&display=swap');
+
+  nav{
+    font-family: 'Cormorant', serif;
+    font-weight: 300;
+  }
+  .navbar-brand{
+    font-family: 'Pacifico', cursive;
+    color: #198754; 
+}
+.row {
+    font-family: 'Cormorant', serif;
+}
+div{
+  font-family: 'Cormorant', serif;
+}
+.fixed{
+    font-family: 'Cormorant', serif;
+}
+.photo{
+    background-image: url('img/pexels-mikhail-nilov-6834393.jpg');
+    height: 80vh;
+    width: 85%;
+    object-fit: cover;
+    background-size: cover;
+    margin-right: 70px;
+    margin-left:50px;
+    background-attachment:fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+.brands {
+    overflow: hidden;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    margin-top:30px;
+    margin: 0 auto;
+  }
+  
+  .brands div {
+    height: 300px;
+    min-width: 200px;
+    margin-left: 100px;
+  }
+  .brands img{
+    width: 50%;
+  }
+  @keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-1500px, 0, 0); /* The image width */
+    }
+  }
+  .brands div {
+    height: 300px;
+    min-width: 200px;
+    margin-left: 100px;
+    animation: slide 15s linear infinite;
+  }
+  /* @media screen and (max-width: 580px) {
+    .brands {
+      display: none;
+    }
+  } */
+  footer{
+    background-image: url('img/pexels-arina-krasnikova-6663469.jpg');
+   
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  footer h1{
+    font-family: 'Pacifico', cursive;
+    color: rgb(10, 1, 14); 
+    text-align: center;
+  }
+  /* for skin care filter */
+ 
+  .show{
+    display: block;
+  }
+
+ 

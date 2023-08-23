@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;1,300;1,400&family=Pacifico&display=swap');
+
+  nav{
+    font-family: 'Cormorant', serif;
+    font-weight: 300;
+  }
+  .navbar-brand{
+    font-family: 'Pacifico', cursive;
+    color: #198754; 
+}
+.row {
+  font-family: 'Cormorant', serif;
+}
+button{
+  font-family: 'Cormorant', serif;
+
+}
+/* for brands display */
+.brands {
+  overflow: hidden;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  margin-top:30px;
+  margin: 0 auto;
+}
+
+.brands div {
+  height: 300px;
+  min-width: 200px;
+  margin-left: 100px;
+}
+.brands img{
+  width: 50%;
+}
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1500px, 0, 0); /* The image width */
+  }
+}
+.brands div {
+  height: 300px;
+  min-width: 200px;
+  margin-left: 100px;
+  animation: slide 15s linear infinite;
+}
+/* for filter */
+
+.show{
+  display: block;
+}
+footer{
+  background-image: url('img/pexels-arina-krasnikova-6663469.jpg');
+ 
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+footer h1{
+  font-family: 'Pacifico', cursive;
+  color: rgb(10, 1, 14); 
+  text-align: center;
+}
+/* for skin care filter */
+.notification-show {
+  display: block !important;
+  opacity: 1 !important;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.product-count{
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  width:200px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+
+}
+.product-count span{
+  width:100%;
+ text-align: center;
+ 
+  font-weight: 600;
+  font-size:40px;
+  cursor: pointer;
+
+}
+
+#count{
+font-size:25px;
+border-right:2px solid rgba(0,0,0,0.2);
+border-left:2px solid rgba(0,0,0,0.2);
+
+}
